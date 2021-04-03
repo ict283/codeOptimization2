@@ -9,6 +9,8 @@
 #include <sstream>
 
 #include <map>
+#include "Wrapper.h"
+#include "BST.h"
 
 using namespace std;
 
@@ -40,7 +42,7 @@ void display(string date, string taskNo);
 
 private:
 
-map<string,Task> taskDatabase; //Key-Value store
+BST<Wrapper<map<string,Task>*>> taskDatabase; //Binary search Key-Value store
 
 };
 
